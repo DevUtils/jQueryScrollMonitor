@@ -7,6 +7,7 @@ $(document).ready(function() {
 			onTriggerPoint: function(e)
 			{
 				console.log('window scroll shot', e);
+				$('#lastWindowShot').val('window scroll shot: ' + e);
 			}
 		}
 	);
@@ -18,6 +19,7 @@ $(document).ready(function() {
 			onTriggerPoint: function(e)
 			{
 				console.log('div element shot', e);
+				$('#lastShot').val('div element shot: ' + e);
 			}
 		}
 	);
