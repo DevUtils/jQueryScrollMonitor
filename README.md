@@ -1,13 +1,16 @@
 # jQueryScrollMonitor
-Monitor browser scroll in percentage
+
+> Monitor browser scroll in percentage
 
 
 ## Live example
+
 http://jsfiddle.net/marceloxp/7u0co37v/
 
 ## Usage
 
 ## HTML
+
 ```html
 	<!DOCTYPE html>
 	<html>
@@ -46,6 +49,7 @@ http://jsfiddle.net/marceloxp/7u0co37v/
 ```
 
 ## JS
+
 ```js
 $(document).ready(function() {
 	
