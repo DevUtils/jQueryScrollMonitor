@@ -1,11 +1,10 @@
 import React from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import './style.css';
 
-export default class Header extends React.Component {
-  render(){
+function Header() {
   return (
-    <Jumbotron className="jumbotron">
+    <div className="jumbotron">
       <h1>jQuery Scroll Monitor</h1>
       <p>
         Monitor browser scroll in percentage
@@ -13,6 +12,8 @@ export default class Header extends React.Component {
       <p>
         <Button href="https://github.com/DevUtils/jQueryScrollMonitor/archive/master.zip" variant="primary">Download</Button>
       </p>
-    </Jumbotron>)
-  }
+    </div>
+  )
 }
+
+export default Header;

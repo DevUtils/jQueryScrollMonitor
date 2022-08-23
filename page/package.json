@@ -4,18 +4,25 @@
   "private": true,
   "homepage": "http://devutils.github.io/jQueryScrollMonitor/",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "bootstrap": "^4.4.1",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.0.0",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "react-simple-code-editor": "^0.11.0",
-    "react-syntax-highlighter": "^12.2.1"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.4.3",
+    "bootstrap": "^5.2.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "react-simple-code-editor": "^0.13.0",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "devDependencies": {
+    "npm-force-resolutions": "0.0.10",
+    "react-scripts": "5.0.1"
+  },
+  "resolutions": {
+    "nth-check": ">=2.0.1"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "react-scripts start",
     "build": "react-scripts build && rm -rf ../docs && mv build ../docs",
     "test": "react-scripts test",
@@ -35,6 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {}
+  }
 }
